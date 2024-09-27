@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Text, Alert, SafeAreaView, FlatList, StyleSheet, TouchableOpacity, Image } from "react-native"
+import { Text, Alert, SafeAreaView, FlatList, StyleSheet, TouchableOpacity, Image, Platform } from "react-native"
 import axios from 'axios'
 import { StatusBar } from "expo-status-bar";
 
@@ -62,7 +62,12 @@ export default function Home(){
                     source={require('../assets/fortune-cookie.png')}
                     style={{ width: 50, height: 50 }}
                   />
-                  <Text style={styles.itemText}>Quebrar Biscoito</Text>
+                  <Text style={styles.itemText}>
+                    {
+                      Platform.OS === "ios" ?
+                      'Comprar Biscoito' : 'Ganhar Biscoito'
+                    }
+                    </Text>
                 </>
               )}
             </TouchableOpacity>
