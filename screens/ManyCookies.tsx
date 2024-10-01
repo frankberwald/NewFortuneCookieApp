@@ -1,13 +1,6 @@
 import { useEffect, useState } from "react"
 import { Text, Alert, SafeAreaView, FlatList, StyleSheet, TouchableOpacity, Image, Platform } from "react-native"
 import axios from 'axios'
-import { StatusBar } from "expo-status-bar";
-
-
-// GET -> lista informacoes
-// POST -> cadastrar um novo informacao
-// DELETE -> deletar um informacao
-// PUT -> atualiza informacoes
 
 interface CookieData {
   id: number;

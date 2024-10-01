@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import MainScreen from './screens/MainScreen';
 import LoginScreen from './screens/LoginScreen';
 import SignUpScreen from './screens/SignUpScreen';
+import CookieRegister from './screens/CookieRegister';
 import AboutScreen from './screens/AboutScreen';
 import CookieScreen from './screens/CookieScreen';
 import FortuneScreen from './screens/FortuneScreen';
@@ -19,6 +20,7 @@ export default function App() {
         <Stack.Screen name="MainScreen" component={MainScreen} options={{headerShown: false}} />
         <Stack.Screen name="LoginScreen" component={LoginScreen} options={{headerShown: false}} />
         <Stack.Screen name="SignUpScreen" component={SignUpScreen} options={{headerShown: false}} />
+        <Stack.Screen name="CookieRegister" component={CookieRegister} options={{headerShown: false}} />
         <Stack.Screen name="AboutScreen" component={AboutScreen} options={{headerShown: false}} />
         <Stack.Screen name="CookieScreen" component={CookieScreen} options={{headerShown: false}}/>
         <Stack.Screen name="FortuneScreen" component={FortuneScreen} options={{headerShown: false}} />

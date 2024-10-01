@@ -24,6 +24,10 @@ export default function MainScreen(){
     navigation.navigate('ManyCookies');
   }
 
+  const goToRegister = () => {
+    navigation.navigate('CookieRegister');
+  };
+
   return (
     <View style={styles.container}>
       <StatusBar />
@@ -47,6 +51,10 @@ export default function MainScreen(){
 
       <TouchableOpacity style={styles.manyCookiesButton} onPress={goToMany}>
         <Text style={styles.buttonText}>Biscoitos</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.manyCookiesButton} onPress={goToRegister}>
+        <Text style={styles.buttonText}>Registrar</Text>
       </TouchableOpacity>
     </View>
 
