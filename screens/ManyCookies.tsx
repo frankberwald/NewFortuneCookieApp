@@ -16,7 +16,7 @@ export default function Home(){
   const [openedCookies, setOpenedCookies] = useState<number[]>([])
 
     useEffect(() => {
-        axios.get('http://10.0.0.113:3000/biscoitos')
+        axios.get(process.env.EXPO_PUBLIC_API_URL + '/biscoitos')
         .then((response) => {
           setCookieData(response.data)
           console.log('GOOD')

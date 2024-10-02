@@ -5,286 +5,287 @@
       "isSpecial": true,
       "brand": "Marca A",
       "prize": "Café grátis",
-      "id": 1
+      "id": "1"
     },
     {
       "message": "Debugging é como ser um detetive em um filme de mistério.",
       "isSpecial": false,
       "brand": "Marca B",
       "prize": "",
-      "id": 2
+      "id": "2"
     },
     {
       "message": "Sempre que você acha que terminou, o bug está só começando.",
       "isSpecial": true,
       "brand": "Marca C",
       "prize": "Caneca personalizada",
-      "id": 3
+      "id": "3"
     },
     {
       "message": "A vida é como um loop infinito, é preciso saber quando sair.",
       "isSpecial": false,
       "brand": "Marca D",
       "prize": "",
-      "id": 4
+      "id": "4"
     },
     {
       "message": "As melhores soluções aparecem quando você menos espera.",
       "isSpecial": true,
       "brand": "Marca E",
       "prize": "Curso online",
-      "id": 5
+      "id": "5"
     },
     {
       "message": "Refatoração: a arte de tornar o código bonito.",
       "isSpecial": false,
       "brand": "Marca F",
       "prize": "",
-      "id": 6
+      "id": "6"
     },
     {
       "message": "Nunca subestime o poder de um café antes do código.",
       "isSpecial": true,
       "brand": "Marca G",
       "prize": "Café grátis",
-      "id": 7
+      "id": "7"
     },
     {
       "message": "A melhor parte de programar é ver tudo funcionando.",
       "isSpecial": false,
       "brand": "Marca H",
       "prize": "",
-      "id": 8
+      "id": "8"
     },
     {
       "message": "O código mais eficiente é aquele que você não precisa reescrever.",
       "isSpecial": true,
       "brand": "Marca I",
       "prize": "Fones de ouvido",
-      "id": 9
+      "id": "9"
     },
     {
       "message": "Testes são o coração da confiança no código.",
       "isSpecial": false,
       "brand": "Marca J",
       "prize": "",
-      "id": 10
+      "id": "10"
     },
     {
       "message": "A curiosidade é a chave para ser um grande desenvolvedor.",
       "isSpecial": true,
       "brand": "Marca K",
       "prize": "Vale-livro",
-      "id": 11
+      "id": "11"
     },
     {
       "message": "Bugs são apenas desafios disfarçados de problemas.",
       "isSpecial": false,
       "brand": "Marca L",
       "prize": "",
-      "id": 12
+      "id": "12"
     },
     {
       "message": "A refatoração é onde o código realmente floresce.",
       "isSpecial": true,
       "brand": "Marca M",
       "prize": "Camiseta personalizada",
-      "id": 13
+      "id": "13"
     },
     {
       "message": "Um bom programador sempre tem uma estratégia de saída.",
       "isSpecial": false,
       "brand": "Marca N",
       "prize": "",
-      "id": 14
+      "id": "14"
     },
     {
       "message": "A sintaxe é temporária, o conhecimento é para sempre.",
       "isSpecial": true,
       "brand": "Marca O",
       "prize": "Vale-presente",
-      "id": 15
+      "id": "15"
     },
     {
       "message": "Códigos bem comentados são um presente para o futuro.",
       "isSpecial": false,
       "brand": "Marca P",
       "prize": "",
-      "id": 16
+      "id": "16"
     },
     {
       "message": "Todo bug ensina algo novo.",
       "isSpecial": true,
       "brand": "Marca Q",
       "prize": "Assinatura de revista",
-      "id": 17
+      "id": "17"
     },
     {
       "message": "Programe como se você fosse o próximo a ler seu código.",
       "isSpecial": false,
       "brand": "Marca R",
       "prize": "",
-      "id": 18
+      "id": "18"
     },
     {
       "message": "A refatoração é uma forma de arte.",
       "isSpecial": true,
       "brand": "Marca S",
       "prize": "Curso online",
-      "id": 19
+      "id": "19"
     },
     {
       "message": "Linhas de código bonitas tornam o mundo melhor.",
       "isSpecial": false,
       "brand": "Marca T",
       "prize": "",
-      "id": 20
+      "id": "20"
     },
     {
       "message": "Um bom café é o início de todo grande código.",
       "isSpecial": true,
       "brand": "Marca U",
       "prize": "Café grátis",
-      "id": 21
+      "id": "21"
     },
     {
       "message": "A verdadeira magia acontece no código limpo.",
       "isSpecial": false,
       "brand": "Marca V",
       "prize": "",
-      "id": 22
+      "id": "22"
     },
     {
       "message": "A melhor documentação é um código bem escrito.",
       "isSpecial": true,
       "brand": "Marca W",
       "prize": "Vale-presente",
-      "id": 23
+      "id": "23"
     },
     {
       "message": "O código perfeito é aquele que você nunca precisa tocar novamente.",
       "isSpecial": false,
       "brand": "Marca X",
       "prize": "",
-      "id": 24
+      "id": "24"
     },
     {
       "message": "Refatorar é melhorar continuamente.",
       "isSpecial": true,
       "brand": "Marca Y",
       "prize": "Caneca personalizada",
-      "id": 25
+      "id": "25"
     },
     {
       "message": "Grandes ideias nascem de códigos simples.",
       "isSpecial": false,
       "brand": "Marca Z",
       "prize": "",
-      "id": 26
+      "id": "26"
     },
     {
       "message": "Cada bug é uma nova oportunidade para aprender.",
       "isSpecial": true,
       "brand": "Marca AA",
       "prize": "Acesso VIP",
-      "id": 27
+      "id": "27"
     },
     {
       "message": "Quem testa bem, dorme tranquilo.",
       "isSpecial": false,
       "brand": "Marca BB",
       "prize": "",
-      "id": 28
+      "id": "28"
     },
     {
       "message": "Menos código, mais eficiência.",
       "isSpecial": true,
       "brand": "Marca CC",
       "prize": "Mouse ergonômico",
-      "id": 29
+      "id": "29"
     },
     {
       "message": "A mágica da programação está nos detalhes.",
       "isSpecial": false,
       "brand": "Marca DD",
       "prize": "",
-      "id": 30
+      "id": "30"
     },
     {
       "message": "A persistência quebra qualquer bug.",
       "isSpecial": true,
       "brand": "Marca EE",
       "prize": "Camiseta exclusiva",
-      "id": 31
+      "id": "31"
     },
     {
       "message": "Cada linha de código conta uma história.",
       "isSpecial": false,
       "brand": "Marca FF",
       "prize": "",
-      "id": 32
+      "id": "32"
     },
     {
       "message": "O código simples é o mais difícil de se escrever.",
       "isSpecial": true,
       "brand": "Marca GG",
       "prize": "Curso avançado",
-      "id": 33
+      "id": "33"
     },
     {
       "message": "A solução mais elegante é sempre a mais simples.",
       "isSpecial": false,
       "brand": "Marca HH",
       "prize": "",
-      "id": 34
+      "id": "34"
     },
     {
       "message": "O código é a linguagem do futuro.",
       "isSpecial": true,
       "brand": "Marca II",
       "prize": "Vale-livro",
-      "id": 35
+      "id": "35"
     },
     {
       "message": "Cada bug é uma nova chance de brilhar.",
       "isSpecial": false,
       "brand": "Marca JJ",
       "prize": "",
-      "id": 36
+      "id": "36"
     },
     {
       "message": "A refatoração constante mantém o código vivo.",
       "isSpecial": true,
       "brand": "Marca KK",
       "prize": "Café grátis",
-      "id": 37
+      "id": "37"
     },
     {
       "message": "Grandes sistemas começam com pequenos commits.",
       "isSpecial": false,
       "brand": "Marca LL",
       "prize": "",
-      "id": 38
+      "id": "38"
     },
     {
       "message": "A programação é o caminho para a criação ilimitada.",
       "isSpecial": true,
       "brand": "Marca MM",
       "prize": "Kit de teclado",
-      "id": 39
+      "id": "39"
     },
     {
       "message": "Um código bem feito é sua própria recompensa.",
       "isSpecial": false,
       "brand": "Marca NN",
       "prize": "",
-      "id": 40
+      "id": "40"
     },
     {
       "message": "Todo grande código começa com uma boa ideia.",
       "isSpecial": true,
       "brand": "Marca OO",
-      "id": 41
+      "prize": "leite",
+      "id": "41"
     }
   ]
 }

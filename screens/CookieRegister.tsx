@@ -1,13 +1,41 @@
 import React, { useState } from 'react';
-import { SafeAreaView, Text, StatusBar, View, Switch, TextInput, TouchableOpacity, StyleSheet} from 'react-native';
-import { Picker } from '@react-native-picker/picker'
+import { SafeAreaView, Text, StatusBar, View, Switch, TextInput, TouchableOpacity, StyleSheet, Alert} from 'react-native';
+import { Picker } from '@react-native-picker/picker';
+import axios from 'axios';
 
 
 export default function CookieRegister(){
   const [isEnabled, setIsEnabled] = useState(false);
   const [message, setMessage] = useState('');
-  const [brand, setBrand] = useState<String>('Marca');
-  const [prizeValue, setPrizeValue] = useState('');
+  const [brand, setBrand] = useState<String>('não informada');
+  const [prizeValue, setPrizeValue] = useState('não informado');
+
+  function handleSave(){
+    console.log('Message:', message);
+    console.log('Is Enabled:', isEnabled);
+    console.log('Prize Value:', prizeValue);
+    console.log('Brand:', brand);
+
+    if (message === ''){
+      Alert.alert('Aviso', 'Impossível salvar campo vazio');
+    }else if (isEnabled === true && (Number(prizeValue) <= 0 || isNaN(Number(prizeValue)) || brand === '')){
+      Alert.alert('Aviso', 'Informe a marca e o valor do prêmio');
+      return;
+    }  {
+      axios.post(process.env.EXPO_PUBLIC_API_URL + '/biscoitos',{
+        message: message,
+        isSpecial: isEnabled,
+        brand: brand,
+        prize: prizeValue,
+      })
+      .then(response => {
+        Alert.alert('Biscoito salvo com sucesso!');
+      })
+      .catch(error => {
+        Alert.alert('Erro', `Erro ao salvar biscoito: ${error.message}`);
+      });
+      }
+    }
 
   return (
     <SafeAreaView style={styles.mainContainer}>
@@ -18,8 +46,8 @@ export default function CookieRegister(){
         <TextInput
         style={styles.cookieInput}
         placeholder='Digite a mensagem'
-        // value={message}
-        // onChangeText={setMessage}
+        value={message}
+        onChangeText={setMessage}
         placeholderTextColor='#8E4918'
         />
         <View style={styles.switchView}>
@@ -32,30 +60,35 @@ export default function CookieRegister(){
           onValueChange={setIsEnabled}
           />
         </View>
-
+        {
+          isEnabled === true &&(
+        <>
         <View style={styles.pickerContainer}>
           <Picker
           style={{backgroundColor: '#fff'}}
-            selectedValue={setBrand}
+            selectedValue={brand}
             onValueChange={(brandName) => setBrand(brandName)}
             >
+            <Picker.Item value="" label="Selecione uma marca"/>
             <Picker.Item value="Doritos" label="Doritos"/>
             <Picker.Item value="Fandangos" label="Fandangos"/>
             <Picker.Item value="Cebolitos" label="Cebolitos"/>
             </Picker>
         </View>
-       
-
         <Text style={styles.titleText}>Valor do Prêmio</Text>
         <TextInput
         style={styles.cookieInput}
         placeholder='Digite o valor do prêmio'
-        // value={prizeValue}
-        // onChangeText={setPrizeValue}
+        value={prizeValue}
+        onChangeText={setPrizeValue}
         placeholderTextColor='#8E4918'
+        keyboardType='number-pad'
         />
+        </>
+        )}
 
-        <TouchableOpacity style={styles.registerButton}><Text style={styles.registerText}>Adicionar Biscoito</Text></TouchableOpacity>
+
+        <TouchableOpacity style={styles.registerButton} onPress={handleSave}><Text style={styles.registerText}>Adicionar Biscoito</Text></TouchableOpacity>
       </View>
     </SafeAreaView>
   )

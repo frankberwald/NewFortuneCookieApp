@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import { Text, View, TouchableOpacity, StatusBar} from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { styles } from '../src/styles';
@@ -61,6 +60,3 @@ export default function MainScreen(){
     </View>
   )
 }
-
-// onPress ={signUpPage}
-// onPress ={loginPage}
